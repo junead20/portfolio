@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Junead Baba</title>
+  <meta name="description"
+    content="Portfolio of Mohammed Junead Baba — Full Stack Developer, AI/ML Enthusiast, and CSE student at CVR College of Engineering. Explore projects, skills, and coding profiles." />
+  <meta name="keywords"
+    content="Mohammed Junead Baba, portfolio, full stack developer, web developer, MERN stack, React, Node.js, CVR College" />
+  <meta name="author" content="Mohammed Junead Baba" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohammed Junead Baba — Full Stack Developer" />
+  <meta property="og:description" content="Next-gen portfolio showcasing projects, skills, and coding expertise." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-text">INITIALIZING</div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== CANVAS LAYERS ===== -->
+  <canvas id="particles-canvas"></canvas>
+  <canvas id="code-rain-canvas"></canvas>
+
+  <!-- ===== GRID OVERLAY ===== -->
+  <div class="grid-overlay"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="navLogo">MJB</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#education" class="nav-link" data-section="education">Education</a>
+        <a href="#profiles" class="nav-link" data-section="profiles">Profiles</a>
+        <a href="#diagnostics" class="nav-link" data-section="diagnostics">Console</a>
+        <a href="#referrals" class="nav-link" data-section="referrals">Referrals</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        <a href="#" class="nav-link" id="navResumeBtn">Resume</a>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-name">Mohammed Junead Baba</h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-title-static">I build</span>
+        <span class="hero-title-dynamic" id="typingText"></span>
+      </div>
+      <p class="hero-description">
+        A passionate Computer Science student crafting modern web experiences
+        with cutting-edge technologies. From full-stack apps to AI-powered solutions —
+        I turn ideas into digital reality.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary magnetic" id="heroCtaPrimary">
+          <i data-lucide="rocket" style="width:16px;height:16px"></i>
+          View Projects
+        </a>
+        <button class="btn btn-outline magnetic" id="heroResumeBtn">
+          <i data-lucide="file-text" style="width:16px;height:16px"></i>
+          Resume
+        </button>
+        <a href="#contact" class="btn btn-outline magnetic" id="heroCtaSecondary">
+          <i data-lucide="send" style="width:16px;height:16px"></i>
+          Contact Me
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: ABOUT ===== -->
+  <section class="about" id="about" aria-label="About section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Know <span class="highlight">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <img src="profile.png" alt="Mohammed Junead Baba" />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <h3>I'm <span>Junead</span>, a Full Stack Developer</h3>
+          <p>
+            Currently pursuing my B.Tech in Computer Science & Engineering with a Minor in
+            AI/ML at CVR College of Engineering, Hyderabad. I'm deeply passionate about
+            building scalable web applications and exploring the frontiers of artificial
+            intelligence and machine learning.
+          </p>
+          <p>
+            With a strong academic foundation (CGPA: 8.94) and hands-on experience in the MERN stack,
+            I love solving complex problems and transforming ideas into elegant, functional applications.
+            When I'm not coding, you'll find me participating in hackathons, earning certifications,
+            and constantly expanding my skill set.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card reveal-scale delay-1">
+              <div class="stat-number" data-count="5">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card reveal-scale delay-2">
+              <div class="stat-number" data-count="8">0</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-card reveal-scale delay-3">
+              <div class="stat-number" data-count="10">0</div>
+              <div class="stat-label">Tech Skills</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: SKILLS ===== -->
+  <section class="skills" id="skills" aria-label="Skills section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Tech <span class="highlight">Arsenal</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal delay-1" id="skillLanguages">
+          <div class="skill-category-icon">⚡</div>
+          <div class="skill-category-title">LANGUAGES</div>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">TSX</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">JavaScript</span>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Python</span>
+                <span class="skill-bar-percent">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Java</span>
+                <span class="skill-bar-percent">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-category reveal delay-2" id="skillFrameworks">
+          <div class="skill-category-icon">🔧</div>
+          <div class="skill-category-title">FRAMEWORKS & LIBRARIES</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Python Libraries</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">React.js</span>
+                <span class="skill-bar-percent">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Node.js</span>
+                <span class="skill-bar-percent">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Express.js</span>
+                <span class="skill-bar-percent">82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases & Cloud -->
+        <div class="skill-category reveal delay-3" id="skillDatabases">
+          <div class="skill-category-icon">🗄️</div>
+          <div class="skill-category-title">DATABASES & CLOUD</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Supabase</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">MongoDB</span>
+                <span class="skill-bar-percent">87%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="87"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Firebase</span>
+                <span class="skill-bar-percent">78%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="78"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">MySQL</span>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dev Tools -->
+        <div class="skill-category reveal delay-4" id="skillTools">
+          <div class="skill-category-icon">🛠️</div>
+          <div class="skill-category-title">DEV TOOLS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">Git & GitHub</span>
+                <span class="skill-bar-percent">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name">REST APIs</span>
+                <span class="skill-bar-percent">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: PROJECTS ===== -->
+  <section class="projects" id="projects" aria-label="Projects section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: ShopNest -->
+        <div class="project-card reveal delay-1" id="projectShopNest">
+          <div class="project-card-header">
+            <div class="project-card-bg" style="background: linear-gradient(135deg, #0f172a, #1e3a5f, #0ea5e9);"></div>
+            <div class="project-card-icon" style="color: #0ea5e9;">🛒</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-number">PROJECT 01</div>
+            <h3 class="project-card-title">ShopNest — Amazon Clone</h3>
+            <p class="project-card-desc">
+              Full-featured e-commerce web app with product browsing, cart management,
+              user authentication, and UPI-based payment integration for a seamless
+              online shopping experience.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">UPI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/junead20/shopnest" target="_blank" rel="noopener noreferrer"
+                class="project-link magnetic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle;margin-right:2px">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                Code
+              </a>
+              <a href="https://shopnest-psi.vercel.app" target="_blank" rel="noopener noreferrer"
+                class="project-link live magnetic">
+                <i data-lucide="external-link" style="width:14px;height:14px"></i>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: EduCore -->
+        <div class="project-card reveal delay-2" id="projectEduCore">
+          <div class="project-card-header">
+            <div class="project-card-bg" style="background: linear-gradient(135deg, #1a0533, #3b0764, #8b5cf6);"></div>
+            <div class="project-card-icon" style="color: #8b5cf6;">📚</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-number">PROJECT 02</div>
+            <h3 class="project-card-title">EduCore</h3>
+            <p class="project-card-desc">
+              Web-based online learning platform with authentication, course management,
+              progress tracking, and instructor dashboards for content upload and
+              student monitoring.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">TSX</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Supabase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/junead20" target="_blank" rel="noopener noreferrer"
+                class="project-link magnetic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle;margin-right:2px">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                Code
+              </a>
+              <a href="https://github.com/junead20" target="_blank" rel="noopener noreferrer"
+                class="project-link live magnetic">
+                <i data-lucide="external-link" style="width:14px;height:14px"></i>
+                Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Edu-bot -->
+        <div class="project-card reveal delay-3" id="projectEduBot">
+          <div class="project-card-header">
+            <div class="project-card-bg" style="background: linear-gradient(135deg, #042f2e, #065f46, #10b981);"></div>
+            <div class="project-card-icon" style="color: #10b981;">🤖</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-number">PROJECT 03</div>
+            <h3 class="project-card-title">Edu-bot — College Information Chatbot</h3>
+            <p class="project-card-desc">
+              AI-powered chatbot answering queries about admissions, courses, fees,
+              departments, and campus facilities using NLP techniques and
+              automated responses.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">NLP</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/junead20/edubot" target="_blank" rel="noopener noreferrer"
+                class="project-link magnetic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle;margin-right:2px">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                Code
+              </a>
+              <a href="https://github.com/junead20/edubot" target="_blank" rel="noopener noreferrer"
+                class="project-link live magnetic">
+                <i data-lucide="external-link" style="width:14px;height:14px"></i>
+                Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: EZTap -->
+        <div class="project-card reveal delay-4" id="projectEZTap">
+          <div class="project-card-header">
+            <div class="project-card-bg" style="background: linear-gradient(135deg, #1c1917, #78350f, #f59e0b);"></div>
+            <div class="project-card-icon" style="color: #f59e0b;">🔔</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-number">PROJECT 04</div>
+            <h3 class="project-card-title">EZTap</h3>
+            <p class="project-card-desc">
+              Complaint management platform enabling users to raise service requests
+              while allowing service providers to manage and resolve issues through
+              role-based access and APIs.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/junead20/eztap" target="_blank" rel="noopener noreferrer"
+                class="project-link magnetic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle;margin-right:2px">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                Code
+              </a>
+              <a href="https://github.com/junead20/eztap" target="_blank" rel="noopener noreferrer"
+                class="project-link live magnetic">
+                <i data-lucide="external-link" style="width:14px;height:14px"></i>
+                Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Court Connect -->
+        <div class="project-card reveal delay-5" id="projectCourtConnect">
+          <div class="project-card-header">
+            <div class="project-card-bg" style="background: linear-gradient(135deg, #0c0a20, #312e81, #6366f1);"></div>
+            <div class="project-card-icon" style="color: #6366f1;">🏟️</div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-number">PROJECT 05</div>
+            <h3 class="project-card-title">Court Connect</h3>
+            <p class="project-card-desc">
+              Online booking platform for sports courts and gaming venues with
+              real-time slot booking, venue management, user authentication,
+              and responsive reservation interface.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/junead20" target="_blank" rel="noopener noreferrer"
+                class="project-link magnetic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle;margin-right:2px">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                Code
+              </a>
+              <a href="https://github.com/junead20" target="_blank" rel="noopener noreferrer"
+                class="project-link live magnetic">
+                <i data-lucide="external-link" style="width:14px;height:14px"></i>
+                Preview
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: EDUCATION & CERTIFICATIONS ===== -->
+  <section class="education" id="education" aria-label="Education section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Education & <span class="highlight">Certifications</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="edu-timeline">
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2023 — 2027</div>
+            <div class="timeline-title">B.Tech in Computer Science & Engineering</div>
+            <div class="timeline-subtitle">CVR College of Engineering, Hyderabad</div>
+            <div class="timeline-score">CGPA: 8.94</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2023 — 2027</div>
+            <div class="timeline-title">Minor Degree in AI & Machine Learning</div>
+            <div class="timeline-subtitle">CVR College of Engineering, Hyderabad</div>
+            <div class="timeline-score">CGPA: 8.67</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2021 — 2023</div>
+            <div class="timeline-title">Intermediate (MPC)</div>
+            <div class="timeline-subtitle">Shree Akshaya Junior College, Sangareddy</div>
+            <div class="timeline-score">Percentage: 98.4%</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-4">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2020 — 2021</div>
+            <div class="timeline-title">Secondary School Education (SSC)</div>
+            <div class="timeline-subtitle">St. Anthony's High School, Sangareddy</div>
+            <div class="timeline-score">CGPA: 10.0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="section-header reveal" style="margin-top: 80px;">
+        <h2 class="section-title">Certi<span class="highlight">fications</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal delay-1" data-cert-img="cert-iith-aiml.png">
+          <div class="cert-icon">🧠</div>
+          <div class="cert-info">
+            <div class="cert-name">Workshop on AI/ML</div>
+            <div class="cert-issuer">IIT Hyderabad</div>
+            <div class="cert-date">Sept 2024</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+
+        <div class="cert-card reveal delay-2" data-cert-img="cert-iith-hackathon.png">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-info">
+            <div class="cert-name">Hackathon Certificate</div>
+            <div class="cert-issuer">IIT Hyderabad</div>
+            <div class="cert-date">Sept 2024</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+
+        <div class="cert-card reveal delay-3" data-cert-img="cert-mongodb.png">
+          <div class="cert-icon">🍃</div>
+          <div class="cert-info">
+            <div class="cert-name">MongoDB Certifications</div>
+            <div class="cert-issuer">MongoDB</div>
+            <div class="cert-date">Dec 2025</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+
+        <div class="cert-card reveal delay-1" data-cert-img="cert-genai.png">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-info">
+            <div class="cert-name">Generative AI</div>
+            <div class="cert-issuer">Infosys SpringBoard</div>
+            <div class="cert-date">June 2025</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+
+        <div class="cert-card reveal delay-2" data-cert-img="cert-cisco.png">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-info">
+            <div class="cert-name">Networking Basics</div>
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <div class="cert-date">Oct 2025</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+
+        <div class="cert-card reveal delay-3" data-cert-img="cert-zscaler.png">
+          <div class="cert-icon">🔒</div>
+          <div class="cert-info">
+            <div class="cert-name">Zscaler and Juniper</div>
+            <div class="cert-issuer">Eduskills</div>
+            <div class="cert-date">2025</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+
+        <div class="cert-card reveal delay-1" data-cert-img="cert-ibm-ml.png">
+          <div class="cert-icon">📊</div>
+          <div class="cert-info">
+            <div class="cert-name">Machine Learning with Python</div>
+            <div class="cert-issuer">IBM Developer Skills Network</div>
+            <div class="cert-date">June 2025</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+
+        <div class="cert-card reveal delay-2" data-cert-img="cert-sololearn.png">
+          <div class="cert-icon">💻</div>
+          <div class="cert-info">
+            <div class="cert-name">Web Development</div>
+            <div class="cert-issuer">Sololearn</div>
+            <div class="cert-date">Dec 2025</div>
+          </div>
+          <div class="cert-scan-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: CODING PROFILES ===== -->
+  <section class="profiles" id="profiles" aria-label="Coding profiles section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Coding <span class="highlight">Profiles</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="profiles-grid">
+        <!-- GitHub -->
+        <a href="https://github.com/junead20" target="_blank" rel="noopener noreferrer"
+          class="profile-card reveal delay-1" id="profileGithub">
+          <div class="profile-icon-wrap github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">GitHub</div>
+            <div class="profile-handle">@junead20</div>
+          </div>
+          <div class="profile-link-arrow">→</div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/junead-baba-a21306353/" target="_blank" rel="noopener noreferrer"
+          class="profile-card reveal delay-2" id="profileLinkedin">
+          <div class="profile-icon-wrap linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">LinkedIn</div>
+            <div class="profile-handle">Junead Baba</div>
+          </div>
+          <div class="profile-link-arrow">→</div>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/junead20/" target="_blank" rel="noopener noreferrer"
+          class="profile-card reveal delay-3" id="profileLeetcode">
+          <div class="profile-icon-wrap leetcode">
+            <i data-lucide="code" style="width:28px;height:28px"></i>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">LeetCode</div>
+            <div class="profile-handle">@junead20</div>
+          </div>
+          <div class="profile-link-arrow">→</div>
+        </a>
+
+        <!-- CodeChef -->
+        <a href="https://www.codechef.com/users/junead20" target="_blank" rel="noopener noreferrer"
+          class="profile-card reveal delay-4" id="profileCodechef">
+          <div class="profile-icon-wrap codechef">
+            <i data-lucide="chef-hat" style="width:28px;height:28px"></i>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">CodeChef</div>
+            <div class="profile-handle">@junead20</div>
+          </div>
+          <div class="profile-link-arrow">→</div>
+        </a>
+
+        <!-- Codeforces -->
+        <a href="https://codeforces.com/profile/Junead" target="_blank" rel="noopener noreferrer"
+          class="profile-card reveal delay-5" id="profileCodeforces">
+          <div class="profile-icon-wrap codeforces">
+            <i data-lucide="trophy" style="width:28px;height:28px"></i>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Codeforces</div>
+            <div class="profile-handle">@Junead</div>
+          </div>
+          <div class="profile-link-arrow">→</div>
+        </a>
+
+        <!-- Smart Interviews -->
+        <a href="https://smartinterviews.in/profile/junead20" target="_blank" rel="noopener noreferrer"
+          class="profile-card reveal delay-6" id="profileSmartInterviews">
+          <div class="profile-icon-wrap smartinterviews">
+            <i data-lucide="brain" style="width:28px;height:28px"></i>
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Smart Interviews</div>
+            <div class="profile-handle">@junead20</div>
+          </div>
+          <div class="profile-link-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: SYSTEM DIAGNOSTICS ===== -->
+  <section class="diagnostics" id="diagnostics" aria-label="System diagnostics section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">System <span class="highlight">Diagnostics</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="diagnostics-grid">
+        <!-- Holographic Terminal -->
+        <div class="terminal-card reveal-left">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="term-btn close"></span>
+              <span class="term-btn minimize"></span>
+              <span class="term-btn expand"></span>
+            </div>
+            <div class="terminal-title">junead@cyberdeck: ~</div>
+            <div class="terminal-status">SYS_ONLINE</div>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="terminal-line system-msg">Initializing connection to Mohammed Junead Baba's server...</div>
+            <div class="terminal-line system-msg">Establish secure tunnel... SUCCESS.</div>
+            <div class="terminal-line system-msg">Type <span class="terminal-cmd">help</span> to view all available
+              diagnostic commands.</div>
+            <div class="terminal-output" id="terminalOutput"></div>
+            <div class="terminal-input-line">
+              <span class="terminal-prompt">guest@cyberdeck:~$</span>
+              <input type="text" id="terminalInput" class="terminal-input" autocomplete="off" spellcheck="false"
+                aria-label="Terminal prompt input" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Grid & Platform Analytics -->
+        <div class="analytics-card reveal-right">
+          <div class="analytics-header">
+            <div class="analytics-title">CORE MATRIX TELEMETRY</div>
+            <div class="analytics-dot"></div>
+          </div>
+
+          <div class="telemetry-widgets">
+            <div class="telemetry-item">
+              <div class="telemetry-val">400+</div>
+              <div class="telemetry-lbl">LeetCode Solved</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-val">2★</div>
+              <div class="telemetry-lbl">CodeChef Stars</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-val">900+</div>
+              <div class="telemetry-lbl">Codeforces Max</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-val">ONLINE</div>
+              <div class="telemetry-lbl">System Node</div>
+            </div>
+          </div>
+
+          <div class="github-activity">
+            <div class="github-title">COMMIT FREQUENCY SPECTRUM (365 DAYS)</div>
+            <div class="github-grid" id="githubGrid"></div>
+            <div class="github-legend">
+              <span>Less</span>
+              <span class="legend-cell level-0"></span>
+              <span class="legend-cell level-1"></span>
+              <span class="legend-cell level-2"></span>
+              <span class="legend-cell level-3"></span>
+              <span class="legend-cell level-4"></span>
+              <span>More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: REFERRALS (PEER & MENTOR FEEDBACK) ===== -->
+  <section class="referrals" id="referrals" aria-label="Peer and mentor feedback section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Peer & Mentor <span class="highlight">Feedback</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="referrals-slider-container reveal">
+        <div class="referrals-track" id="referralsTrack">
+          <!-- Card 1 -->
+          <div class="referral-card active" data-index="0">
+            <div class="referral-content">
+              <span class="quote-icon">“</span>
+              <p class="referral-text">
+                Junead's performance during his Web Development was exceptional. He designed modular MERN
+                stack routes and spearheaded the integration of a secure UPI checkout for our prototype platform. His
+                speed of execution and precision in database modeling is top-tier.
+              </p>
+              <div class="referral-author">
+                <div class="author-avatar" style="background: rgba(0, 240, 255, 0.15); color: var(--neon-cyan);">VS
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Praveen</h4>
+                  <p class="author-title">Asst. Professor — CVR College Of Engineering</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="referral-card" data-index="1">
+            <div class="referral-content">
+              <span class="quote-icon">“</span>
+              <p class="referral-text">
+                Mohammed Junead excels not only academically but as a collaborative leader. His development of the
+                college information chatbot, Edu-bot, demonstrated a profound understanding of natural language
+                processing and real-world utility. He is a standout engineer.
+              </p>
+              <div class="referral-author">
+                <div class="author-avatar" style="background: rgba(139, 92, 246, 0.15); color: var(--neon-purple);">DR
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Teja Santhosh</h4>
+                  <p class="author-title">Professor & Mentor — CVR College Of Engineering</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="referral-card" data-index="2">
+            <div class="referral-content">
+              <span class="quote-icon">“</span>
+              <p class="referral-text">
+                Junead demonstrated outstanding problem-solving during our intensive AI/ML workshop. His rapid
+                deployment of a generative QA pipeline was both creative and optimized. He has an innate ability to
+                translate theoretical concepts into robust code.
+              </p>
+              <div class="referral-author">
+                <div class="author-avatar" style="background: rgba(255, 0, 170, 0.15); color: var(--neon-magenta);">HP
+                </div>
+                <div class="author-info">
+                  <h4 class="author-name">Hackathon Evaluation Panel</h4>
+                  <p class="author-title">IIT Hyderabad AI/ML Workshop Coordinator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn prev" id="sliderPrev" aria-label="Previous recommendation">&larr;</button>
+          <div class="slider-dots" id="sliderDots">
+            <span class="slider-dot active" data-index="0"></span>
+            <span class="slider-dot" data-index="1"></span>
+            <span class="slider-dot" data-index="2"></span>
+          </div>
+          <button class="slider-btn next" id="sliderNext" aria-label="Next recommendation">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 9: CONTACT ===== -->
+  <section class="contact" id="contact" aria-label="Contact section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's build something amazing together.</h3>
+          <p>
+            Whether you have a project in mind, a collaboration opportunity, or just want to say hello —
+            I'd love to hear from you. Drop me a message and I'll get back to you as soon as possible!
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:juneadbaba61@gmail.com" class="contact-item" id="contactEmail">
+              <div class="contact-icon">
+                <i data-lucide="mail" style="width:20px;height:20px;color:var(--neon-cyan)"></i>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">juneadbaba61@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="tel:+918639079655" class="contact-item" id="contactPhone">
+              <div class="contact-icon">
+                <i data-lucide="phone" style="width:20px;height:20px;color:var(--neon-cyan)"></i>
+              </div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+91 8639079655</div>
+              </div>
+            </a>
+
+            <div class="contact-item" id="contactLocation">
+              <div class="contact-icon">
+                <i data-lucide="map-pin" style="width:20px;height:20px;color:var(--neon-cyan)"></i>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Hyderabad, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Portfolio Message from Website">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-group">
+            <label class="form-label" for="formName">Your Name</label>
+            <input class="form-input" type="text" id="formName" name="name" placeholder="Junead" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="formEmail">Your Email</label>
+            <input class="form-input" type="email" id="formEmail" name="email" placeholder="juneadbaba61@gmail.com"
+              required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="formMessage">Message</label>
+            <textarea class="form-textarea" id="formMessage" name="message" placeholder="Your message here..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-submit magnetic" id="formSubmit">
+            <i data-lucide="send"
+              style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:8px"></i>
+            Send Message
+          </button>
+          <div class="form-note">
+            * First-time submission requires clicking the activation link sent to your email (juneadbaba61@gmail.com) by
+            FormSubmit.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          Designed & Built by <span>Mohammed Junead Baba</span> © 2026
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/junead20" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link magnetic" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/junead-baba-a21306353/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link magnetic" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="mailto:juneadbaba61@gmail.com" class="footer-social-link magnetic" aria-label="Email">
+            <i data-lucide="mail" style="width:16px;height:16px"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CERTIFICATION PREVIEW MODAL ===== -->
+  <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate Image Preview">
+    <div class="cert-modal-overlay" id="certModalOverlay"></div>
+    <div class="cert-modal-content">
+      <button class="cert-modal-close" id="certModalClose" aria-label="Close modal">&times;</button>
+      <div class="cert-modal-img-wrap">
+        <img id="certModalImg" src="" alt="Certificate Preview" />
+        <div class="cert-modal-glow"></div>
+      </div>
+      <div class="cert-modal-details">
+        <h3 class="cert-modal-title" id="certModalTitle"></h3>
+        <p class="cert-modal-issuer" id="certModalIssuer"></p>
+        <p class="cert-modal-date" id="certModalDate"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RESUME PREVIEW MODAL ===== -->
+  <div class="cert-modal" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume PDF Preview">
+    <div class="cert-modal-overlay" id="resumeModalOverlay"></div>
+    <div class="cert-modal-content resume-modal-content">
+      <button class="cert-modal-close" id="resumeModalClose" aria-label="Close modal">&times;</button>
+      <h3 class="cert-modal-title" style="margin-bottom: 15px;">Mohammed Junead Baba — Resume</h3>
+      <div class="resume-iframe-container">
+        <iframe src="Mohammed-Junead-Baba-Resume.pdf" width="100%" height="100%" style="border: none;"></iframe>
+      </div>
+      <div class="resume-modal-actions">
+        <a href="Mohammed-Junead-Baba-Resume.pdf" download="Mohammed-Junead-Baba-Resume.pdf"
+          class="btn btn-primary magnetic" id="resumeDownloadBtn">
+          <i data-lucide="download" style="width:16px;height:16px"></i>
+          Download Resume
+        </a>
+        <a href="Mohammed-Junead-Baba-Resume.pdf" target="_blank" class="btn btn-outline magnetic" id="resumeOpenBtn">
+          <i data-lucide="external-link" style="width:16px;height:16px"></i>
+          Open in New Tab
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="script.js"></script>
+</body>
+
+</html>
